@@ -1,4 +1,8 @@
 from preprocess import *
+from scipy import stats
+import statsmodels.api as sm
+import scipy.cluster.hierarchy as sch
+from sklearn.preprocessing import StandardScaler
 
 # Recency value
 rfm_table1 = pd.DataFrame(pre_processed_data['CustomerID'].unique())
@@ -100,4 +104,3 @@ for i in range(0,len(segmented_rfm1)):
         label[i] = "Others"
 
 segmented_rfm1['label'] = label
-print(segmented_rfm1)
