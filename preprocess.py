@@ -58,7 +58,5 @@ data['Revenue'] =  data['Quantity']*data['UnitPrice']
 pre_processed_data = data.copy()
 
 #pre_processed_data.to_csv("Dataset/processed_data.csv",index=False)
-
-
 # print(data.shape)
 # print(pre_processed_data.shape)
